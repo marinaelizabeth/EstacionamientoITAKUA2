@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulario registrarse</h2>
+    <form action="api_registrarse.php" method="post">
+     Username: <input type="text" name="username" />
+     <br>
+     Nombre Completo: <input type="text" name="nombrecompleto" />
+     <br>
+     Contrasena: <input type="password" name="pass" />
+     <br>
+     Confirmar Contrasena: <input type="password" name="confirmpass" />
+     <br>
+     <br>
+     <select name="tipoUsuario">
+        <option value="1">Administrador</option>
+        <option value="2">Funcionario</option>
+      </select>
+     <br>
+     <input type="submit" />
+    </form>
+
+    <h2>Formulario Buscar tarifas</h2>
+
+    <form action="api_tarifas.php" method="get">
+ 
+        <select name="tipovehiculo">
+           <option value="1">Autos</option>
+           <option value="2">Motos</option>
+         </select>
+        <br>
+        <input type="submit" value="Mostrar" />
+    </form>
+
+    <h2>Formulario Login</h2>
+    <form action="api_login.php" method="post">
+      Username: <input type="text" name="username" />
+      <br>
+      Contrasena: <input type="password" name="pass" />
+      <br>
+      <input type="submit" />
+    </form>
+
+    <h2>Formulario ACTUALIZAR TARIFAS</h2>
+    <form action="api_actualizartarifa.php" method="post">
+    <select name="idtipoVehiculo">
+        <option value="1">Autos</option>
+        <option value="2">Motos</option>
+    </select>
+    <br>
+     Por hora: <input type="number" name="preciohora" />
+     <br>
+     Por dia: <input type="number" name="preciodia" />
+     <br>
+     Por semana: <input type="number" name="preciosemana" />
+     <br>
+     Por mes: <input type="number" name="preciomes" />
+     <br>
+     <br>
+     <input type="submit" />
+    </form>
+    
+    
+</body>
+</html>
